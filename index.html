@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Grid Designer</title>
+	  <link href="css/lightMode.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body oncontextmenu="return false;">
+	  <h1>Grid Designer</h1>
+		<p><a href="/index.html">Back</a></p>
+
+  	<section>
+	  	<div id="container"></div>
+	  	<div class="color-select-main">
+	  		<div class="grey color-select selected" id="grey"></div>
+	  		<div class="red color-select unselected" id="red"></div>
+	  		<div class="green color-select unselected" id="green"></div>
+	  		<div class="blue color-select unselected" id="blue"></div>
+	  	</div>
+      <div class="grid-select-main">
+        <div class="grid-select selected" id="grid-0" >Selected Grid</div>
+        <div class="grid-select unselected" id="grid-1"></div>
+        <div class="grid-select unselected" id="grid-2"></div>
+      </div>
+			<input type="checkbox" name="dark-mode" id="dark-mode">
+			<label for="dark-mode">Dark Mode</label>
+			<button id="clear-grid">Clear Grid</button>
+	  </section>
+
+    <script src="js/color-select.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

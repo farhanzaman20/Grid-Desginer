@@ -1,0 +1,93 @@
+html {
+  text-align: center;
+  background-color: white;
+}
+
+section {
+  margin: auto;
+  width: 826px;
+}
+  
+#container {
+  width: 754px;
+  float: left;
+}
+
+#container div {
+  width: 48px;
+  height: 48px;
+  border: 1px solid black;
+  float: left;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.red {
+  background-color: red;
+}
+  
+.green {
+  background-color: green;
+}
+  
+.blue {
+  background-color: blue;
+}
+  
+.player {
+  background-color: black; 
+}
+
+.color-select-main {
+  width: 62px;
+  height: 248px;
+  float: right;
+  border: 1px solid black;
+}
+
+.color-select {
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+  
+.unselected {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.selected {
+  border: 1px solid white;
+  cursor: default;
+  text-align: center;
+  color: black;
+}
+
+.grid-select-main {
+  width: 62px;
+  height: 186px;
+  float: right;
+  border: 1px solid black;
+}
+
+.grid-select {
+  width: 60px;
+  height: 60px;
+  float: right;
+}
+
+.mini-grid-element {
+  width: 4px;
+  height: 4px;
+  float: left;
+}
+
+h1 {
+  color: black;
+}
+
+label {
+  color: black;
+}
