@@ -87,3 +87,5 @@ document.querySelector('button#clear-grid').addEventListener('click', () => {
   deleteGrid();
   createDivGrid();
 })
+
+localStorage.removeItem('selectedGrid');
