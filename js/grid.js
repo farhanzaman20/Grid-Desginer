@@ -157,6 +157,7 @@ function changeGrid(newGrid) {
   }
   console.log(gridLevels[currentLevel]);
   currentLevel = newGrid;
+  localStorage.setItem('selectedGrid', newGrid);
   grid[player.row][player.col] = 2;
   deleteGrid();
   createDivGrid();

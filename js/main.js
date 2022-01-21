@@ -4,7 +4,12 @@ const NUM_COLS = 15;
 
 // Create a Grid Arrays
 let gridLevels = [createCleanGridArray(), createCleanGridArray(), createDirtyGridArray()];
-let currentLevel = 0;
+for (let i = 0; i < 3; i++) {
+  if (localStorage.getItem('grid-' + i) != null) {
+    gridLevels[i] = JSON.parse(localStorage.getItem('grid-' + i))
+  }
+}
+let currentLevel = '0';
 let grid = gridLevels[0];
 grid[player.row][player.col] = 2;
 
@@ -81,9 +86,14 @@ if (localStorage.getItem('theme') ==  'dark') {
 
 // Clear Grid
 document.querySelector('button#clear-grid').addEventListener('click', () => {
-  movePlayer(13, 0);
   grid = createCleanGridArray();
   grid[player.row][player.col] = 2;
   deleteGrid();
   createDivGrid();
+})
+
+// Save Current Grid
+document.querySelector('#save-grid').addEventListener('click', () => {
+  localStorage.setItem('playerLocation', JSON.stringify(player));
+  localStorage.setItem('grid-' + currentLevel, JSON.stringify(grid));
 })
